@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C02D5A8A2558F01900CE5680 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02D5A892558F01900CE5680 /* UIViewController.swift */; };
+		C08CB9B12558EA5B0074A03B /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08CB9B02558EA5B0074A03B /* AddNoteViewController.swift */; };
 		C0E56149255094BE00BC6D92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E56148255094BE00BC6D92 /* AppDelegate.swift */; };
 		C0E5614B255094BE00BC6D92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5614A255094BE00BC6D92 /* SceneDelegate.swift */; };
-		C0E5614D255094BE00BC6D92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5614C255094BE00BC6D92 /* ViewController.swift */; };
-		C0E56150255094BE00BC6D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E5614E255094BE00BC6D92 /* Main.storyboard */; };
+		C0E5614D255094BE00BC6D92 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5614C255094BE00BC6D92 /* NotesViewController.swift */; };
+		C0E56150255094BE00BC6D92 /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E5614E255094BE00BC6D92 /* Notes.storyboard */; };
 		C0E56152255094BE00BC6D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0E56151255094BE00BC6D92 /* Assets.xcassets */; };
 		C0E56155255094BE00BC6D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E56153255094BE00BC6D92 /* LaunchScreen.storyboard */; };
+		C0E56164255095B200BC6D92 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E56163255095B200BC6D92 /* CoreDataManager.swift */; };
+		C0E5616A255099E600BC6D92 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0E56168255099E600BC6D92 /* Notes.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C02D5A892558F01900CE5680 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		C08CB9B02558EA5B0074A03B /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 		C0E56145255094BE00BC6D92 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E56148255094BE00BC6D92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0E5614A255094BE00BC6D92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C0E5614C255094BE00BC6D92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C0E5614F255094BE00BC6D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0E5614C255094BE00BC6D92 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		C0E5614F255094BE00BC6D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Notes.storyboard; sourceTree = "<group>"; };
 		C0E56151255094BE00BC6D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0E56154255094BE00BC6D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0E56156255094BE00BC6D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0E56163255095B200BC6D92 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		C0E56169255099E600BC6D92 /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C02D5A882558F00500CE5680 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C02D5A892558F01900CE5680 /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C08CB9AF2558EA430074A03B /* Add Note View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C08CB9B02558EA5B0074A03B /* AddNoteViewController.swift */,
+			);
+			path = "Add Note View Controller";
+			sourceTree = "<group>";
+		};
+		C0E3651F2558DA8900AC58C3 /* Root View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C0E5614C255094BE00BC6D92 /* NotesViewController.swift */,
+			);
+			path = "Root View Controller";
+			sourceTree = "<group>";
+		};
 		C0E5613C255094BE00BC6D92 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +88,75 @@
 		C0E56147255094BE00BC6D92 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				C0E56148255094BE00BC6D92 /* AppDelegate.swift */,
-				C0E5614A255094BE00BC6D92 /* SceneDelegate.swift */,
-				C0E5614C255094BE00BC6D92 /* ViewController.swift */,
-				C0E5614E255094BE00BC6D92 /* Main.storyboard */,
-				C0E56151255094BE00BC6D92 /* Assets.xcassets */,
-				C0E56153255094BE00BC6D92 /* LaunchScreen.storyboard */,
-				C0E56156255094BE00BC6D92 /* Info.plist */,
+				C02D5A882558F00500CE5680 /* Extensions */,
+				C0E56167255099D900BC6D92 /* CoreData */,
+				C0E561622550958C00BC6D92 /* Managers */,
+				C0E56161255094F200BC6D92 /* Supporting Files */,
+				C0E56160255094EB00BC6D92 /* Resources */,
+				C0E5615F255094E400BC6D92 /* Storyboards */,
+				C0E5615E255094DC00BC6D92 /* View Controllers */,
+				C0E5615D255094D600BC6D92 /* Application Delegate */,
 			);
 			path = Notes;
+			sourceTree = "<group>";
+		};
+		C0E5615D255094D600BC6D92 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C0E5614A255094BE00BC6D92 /* SceneDelegate.swift */,
+				C0E56148255094BE00BC6D92 /* AppDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		C0E5615E255094DC00BC6D92 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C08CB9AF2558EA430074A03B /* Add Note View Controller */,
+				C0E3651F2558DA8900AC58C3 /* Root View Controller */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C0E5615F255094E400BC6D92 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C0E5614E255094BE00BC6D92 /* Notes.storyboard */,
+				C0E56153255094BE00BC6D92 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C0E56160255094EB00BC6D92 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C0E56151255094BE00BC6D92 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C0E56161255094F200BC6D92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0E56156255094BE00BC6D92 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0E561622550958C00BC6D92 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C0E56163255095B200BC6D92 /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C0E56167255099D900BC6D92 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C0E56168255099E600BC6D92 /* Notes.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +218,7 @@
 			files = (
 				C0E56155255094BE00BC6D92 /* LaunchScreen.storyboard in Resources */,
 				C0E56152255094BE00BC6D92 /* Assets.xcassets in Resources */,
-				C0E56150255094BE00BC6D92 /* Main.storyboard in Resources */,
+				C0E56150255094BE00BC6D92 /* Notes.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +229,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0E5614D255094BE00BC6D92 /* ViewController.swift in Sources */,
+				C02D5A8A2558F01900CE5680 /* UIViewController.swift in Sources */,
+				C0E5614D255094BE00BC6D92 /* NotesViewController.swift in Sources */,
+				C0E5616A255099E600BC6D92 /* Notes.xcdatamodeld in Sources */,
+				C08CB9B12558EA5B0074A03B /* AddNoteViewController.swift in Sources */,
 				C0E56149255094BE00BC6D92 /* AppDelegate.swift in Sources */,
+				C0E56164255095B200BC6D92 /* CoreDataManager.swift in Sources */,
 				C0E5614B255094BE00BC6D92 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,12 +242,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C0E5614E255094BE00BC6D92 /* Main.storyboard */ = {
+		C0E5614E255094BE00BC6D92 /* Notes.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C0E5614F255094BE00BC6D92 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Notes.storyboard;
 			sourceTree = "<group>";
 		};
 		C0E56153255094BE00BC6D92 /* LaunchScreen.storyboard */ = {
@@ -288,7 +384,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XZ3RGN8AK;
-				INFOPLIST_FILE = Notes/Info.plist;
+				INFOPLIST_FILE = "Notes/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +392,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Solorio.George.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +403,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XZ3RGN8AK;
-				INFOPLIST_FILE = Notes/Info.plist;
+				INFOPLIST_FILE = "Notes/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +411,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Solorio.George.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -341,6 +437,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C0E56168255099E600BC6D92 /* Notes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C0E56169255099E600BC6D92 /* Notes.xcdatamodel */,
+			);
+			currentVersion = C0E56169255099E600BC6D92 /* Notes.xcdatamodel */;
+			path = Notes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C0E5613D255094BE00BC6D92 /* Project object */;
 }
